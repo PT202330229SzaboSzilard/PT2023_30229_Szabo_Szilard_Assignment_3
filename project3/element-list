@@ -1,0 +1,8 @@
+ro.tuc
+ro.tuc.connection
+ro.tuc.dao
+ro.tuc.gui
+ro.tuc.logic
+ro.tuc.logic.validators
+ro.tuc.model
+ro.tuc.start

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ro.tuc"},{"l":"ro.tuc.connection"},{"l":"ro.tuc.dao"},{"l":"ro.tuc.gui"},{"l":"ro.tuc.logic"},{"l":"ro.tuc.logic.validators"},{"l":"ro.tuc.model"},{"l":"ro.tuc.start"}];updateSearchResults();
