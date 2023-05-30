@@ -15,6 +15,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+import static ro.tuc.start.Reflection.getTableHeaders;
+
 /**
  * Interfata grafica a programului pentru ca utilizatorul sa nu aiba de-a face cu backend-ul
  */
@@ -70,7 +72,7 @@ public class View {
         JPanel clientPanel = new JPanel();
         clientPanel.setLayout(new BorderLayout());
 
-        clientTableModel = new DefaultTableModel(new String[]{"ID", "Name", "Email", "Address", "Age"}, 0);
+        clientTableModel = new DefaultTableModel(getTableHeaders(Client.class), 0);
         clientTable = new JTable(clientTableModel);
         JScrollPane clientScrollPane = new JScrollPane(clientTable);
 
@@ -199,7 +201,7 @@ public class View {
         JPanel productPanel = new JPanel();
         productPanel.setLayout(new BorderLayout());
 
-        productTableModel = new DefaultTableModel(new String[]{"ID","Name", "Quantity"}, 0);
+        productTableModel = new DefaultTableModel(getTableHeaders(Product.class), 0);
         productTable = new JTable(productTableModel);
         JScrollPane productScrollPane = new JScrollPane(productTable);
 

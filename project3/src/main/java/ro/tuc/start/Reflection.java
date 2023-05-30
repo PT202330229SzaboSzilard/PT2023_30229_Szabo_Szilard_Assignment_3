@@ -29,4 +29,13 @@ public class Reflection {
 
         }
     }
+
+    public static Object[] getTableHeaders(Class<?> clazz) {
+        Field[] fields = clazz.getDeclaredFields();
+        Object[] headers = new Object[fields.length];
+        for (int i = 0; i < fields.length; i++) {
+            headers[i] = fields[i].getName();
+        }
+        return headers;
+    }
 }
